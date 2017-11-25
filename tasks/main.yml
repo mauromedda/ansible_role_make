@@ -1,0 +1,10 @@
+---
+# tasks file for ansible_role_pip
+
+- name: "PIP | Ensure that Make is installed"
+  yum:
+    name: python
+    state: present
+  tags:
+    - install
+    - pip
