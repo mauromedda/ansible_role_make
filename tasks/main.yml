@@ -1,10 +1,10 @@
 ---
-# tasks file for ansible_role_pip
+# tasks file for ansible_role_make
 
-- name: "PIP | Ensure that Make is installed"
+- name: "Make | Ensure that Make is installed"
   yum:
-    name: python
+    name: make
     state: present
   tags:
     - install
-    - pip
+    - make
